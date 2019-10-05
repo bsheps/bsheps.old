@@ -29,9 +29,7 @@ function mainPicSwap () {
 
 function setUserName() {
     let myName = prompt('Please enter your name.');
-    if(!myName && myName === null){
-        setUserName();
-    }else{
-       localStorage.setItem('name', myName); 
+    if(myName || myName !== null){
+        localStorage.setItem('name', myName); 
     }
   }
